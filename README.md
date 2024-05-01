@@ -82,8 +82,11 @@ PROGRAM :-
   plain[i]=plain[i]+26;
   
   printf("%c",plain[i]);
+
 }
-return 0;
+
+  return 0;
+  
 }
 '''
 
