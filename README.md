@@ -40,7 +40,9 @@ PROGRAM :-
  int main()
  {
   char plain[10], cipher[10];
+  
   int key,i,length;
+  
   int result;
   
   printf("\n Enter the plain text:");
@@ -50,6 +52,7 @@ PROGRAM :-
   printf("\n Enter the key value:");
   
   scanf("%d", &key);
+  
   printf("\n \n \t PLAIN TEXt: %s",plain);
   
   printf("\n \n \t ENCRYPTED TEXT: ");
@@ -69,11 +72,15 @@ PROGRAM :-
   for(i=0;i<length;i++)
 {
   plain[i]=cipher[i]-key;
+  
   if(isupper(cipher[i])&&(plain[i]<'A'))
+  
   plain[i]=plain[i]+26;
   
   if(islower(cipher[i])&&(plain[i]<'a'))
+  
   plain[i]=plain[i]+26;
+  
   printf("%c",plain[i]);
 }
 return 0;
